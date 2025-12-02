@@ -300,7 +300,9 @@ p {
 }
 
 .section-label::before,
-.section-label::after {
+.section-label::after,
+.section-label span::before,
+.section-label span::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -317,6 +319,16 @@ p {
 .section-label::after {
   bottom: -8px;
   right: -8px;
+}
+
+.section-label span::before {
+  top: -8px;
+  right: -8px;
+}
+
+.section-label span::after {
+  bottom: -8px;
+  left: -8px;
 }
 
 /* ========================================
