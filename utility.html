@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Component Library - Reusable Components</title>
+    <meta name="description" content="Complete component library with reusable sections for your portfolio theme.">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3H389gNtPVTENOEEIHfrooo/rKQagM3+P6BY5KY+618R5ia+kSTVaKPTU1IBqXnO2IsS6QT+6R0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- FIXED AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-Ho3lln+G2MSj1LhN1LsY5cq7+VxhxF71FqKapdJQ1VgjPjvaBA1SV6Zo3ELd/BVRaWZHKLhxNku1vFAKZy6xHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light">
+    <!-- Enhanced Sidebar with improved styling -->
+    <aside class="sidebar">
+        <h2><i class="fas fa-palette me-2" style="color: #1abc9c;"></i> Components</h2>
+        <ul class="sidebar-menu">
+            <li><a href="#" class="menu-item active" data-section="buttons">Buttons</a></li>
+            <li><a href="#" class="menu-item" data-section="cards">Cards</a></li>
+            <li><a href="#" class="menu-item" data-section="labels">Labels</a></li>
+            <li><a href="#" class="menu-item" data-section="badges">Badges & Tags</a></li>
+            <li><a href="#" class="menu-item" data-section="icons">Icons</a></li>
+            <li><a href="#" class="menu-item" data-section="sections">Typography</a></li>
+            <li><a href="#" class="menu-item" data-section="forms">Forms</a></li>
+            <li><a href="#" class="menu-item" data-section="animations">Animations</a></li>
+            <li><a href="#" class="menu-item" data-section="hero">Hero Sections</a></li>
+            <li><a href="#" class="menu-item" data-section="testimonials">Testimonials</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- BUTTONS SECTION -->
+        <div class="component-section active" id="buttons">
+            <div class="section-header">
+                <h2>Buttons</h2>
+            </div>
+            <div class="component-grid">
+                <div class="component-item">
+                    <p class="component-label">Primary Button</p>
+                    <div class="component-preview">
+                        <button class="btn btn-dark">
+                            <span class="me-2">Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Primary with Icon (Left)</p>
+                    <div class="component-preview">
+                        <button class="btn btn-dark">
+                            <i class="fas fa-envelope me-2"></i>
+                            <span>Email Me</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Secondary Button</p>
+                    <div class="component-preview">
+                        <button class="btn btn-outline-dark">
+                            <i class="fas fa-download me-2"></i>
+                            <span>Download CV</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Outline Button</p>
+                    <div class="component-preview">
+                        <button class="btn btn-outline-primary">View Project</button>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Accent Button</p>
+                    <div class="component-preview">
+                        <button class="btn btn-primary">Explore Now</button>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Button Sizes</p>
+                    <div class="component-preview">
+                        <button class="btn btn-dark btn-sm me-2">Small</button>
+                        <button class="btn btn-dark me-2">Normal</button>
+                        <button class="btn btn-dark btn-lg">Large</button>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Button Group</p>
+                    <div class="component-preview">
+                        <div class="d-flex gap-2 flex-wrap">
+                            <button class="btn btn-dark">Action 1</button>
+                            <button class="btn btn-outline-dark">Action 2</button>
+                            <button class="btn btn-primary">Action 3</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Button Loading State</p>
+                    <div class="component-preview">
+                        <button class="btn btn-dark" disabled>
+                            <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                            Loading...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARDS SECTION -->
+        <div class="component-section" id="cards">
+            <div class="section-header">
+                <h2>Cards</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 p-5">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">Building responsive and performant web applications with modern technologies.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 p-5">
+                        <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h5 class="card-title">Mobile Design</h5>
+                        <p class="card-text">Creating intuitive mobile experiences that work seamlessly across devices.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 p-5">
+                        <div class="card-icon"><i class="fas fa-palette"></i></div>
+                        <h5 class="card-title">UI/UX Design</h5>
+                        <p class="card-text">Designing beautiful interfaces that combine functionality with aesthetics.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 p-5">
+                        <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h5 class="card-title">Brand Identity</h5>
+                        <p class="card-text">Developing comprehensive branding solutions for digital and print media.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 p-5">
+                        <div class="card-icon"><i class="fas fa-search"></i></div>
+                        <h5 class="card-title">SEO Optimization</h5>
+                        <p class="card-text">Optimizing websites for search engines to increase visibility and traffic.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 p-5">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h5 class="card-title">Analytics</h5>
+                        <p class="card-text">Providing insights and strategies to improve digital performance metrics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LABELS SECTION -->
+        <div class="component-section" id="labels">
+            <div class="section-header">
+                <h2>Section Labels</h2>
+            </div>
+            <div class="label-showcase">
+                <div>
+                    <p class="component-label">Default Label</p>
+                    <div class="component-preview">
+                        <div class="section-label">
+                            <span class="label-text">Services</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="component-label">Portfolio Label</p>
+                    <div class="component-preview">
+                        <div class="section-label">
+                            <span class="label-text">Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="component-label">About Label</p>
+                    <div class="component-preview">
+                        <div class="section-label">
+                            <span class="label-text">About Me</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="component-label">Skills Label</p>
+                    <div class="component-preview">
+                        <div class="section-label">
+                            <span class="label-text">Skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="component-label">Experience Label</p>
+                    <div class="component-preview">
+                        <div class="section-label">
+                            <span class="label-text">Experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="component-label">Contact Label</p>
+                    <div class="component-preview">
+                        <div class="section-label">
+                            <span class="label-text">Get In Touch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BADGES & TAGS SECTION -->
+        <div class="component-section" id="badges">
+            <div class="section-header">
+                <h2>Badges & Tags</h2>
+            </div>
+            <div class="component-item">
+                <p class="component-label">Project Tags</p>
+                <div class="component-preview">
+                    <span class="tag">React</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">HTML5</span>
+                    <span class="tag">Responsive</span>
+                </div>
+
+                <p class="component-label mt-5 mb-3">Primary Tags</p>
+                <div class="component-preview">
+                    <span class="tag tag-primary">Featured</span>
+                    <span class="tag tag-primary">Popular</span>
+                    <span class="tag tag-primary">New</span>
+                    <span class="tag tag-primary">Trending</span>
+                </div>
+
+                <p class="component-label mt-5 mb-3">Dark Tags</p>
+                <div class="component-preview">
+                    <span class="tag tag-dark">Advanced</span>
+                    <span class="tag tag-dark">Pro</span>
+                    <span class="tag tag-dark">Premium</span>
+                    <span class="tag tag-dark">Exclusive</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ICONS SECTION -->
+        <div class="component-section" id="icons">
+            <div class="section-header">
+                <h2>Icons & Visual Elements</h2>
+            </div>
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <i class="fas fa-code"></i>
+                    <p class="icon-label">Code</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-palette"></i>
+                    <p class="icon-label">Design</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p class="icon-label">Mobile</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-chart-line"></i>
+                    <p class="icon-label">Analytics</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-search"></i>
+                    <p class="icon-label">Search</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-rocket"></i>
+                    <p class="icon-label">Launch</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-star"></i>
+                    <p class="icon-label">Rating</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-heart"></i>
+                    <p class="icon-label">Favorite</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-check"></i>
+                    <p class="icon-label">Success</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-cog"></i>
+                    <p class="icon-label">Settings</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-download"></i>
+                    <p class="icon-label">Download</p>
+                </div>
+                <div class="icon-item">
+                    <i class="fas fa-upload"></i>
+                    <p class="icon-label">Upload</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TYPOGRAPHY SECTION -->
+        <div class="component-section" id="sections">
+            <div class="section-header">
+                <h2>Typography & Headings</h2>
+            </div>
+            <div class="typography-showcase">
+                <div class="typography-item">
+                    <h1>Heading H1 - Hero Title</h1>
+                    <p class="component-label">Used for main page titles</p>
+                </div>
+
+                <div class="typography-item">
+                    <h2>Heading H2 - Section Title</h2>
+                    <p class="component-label">Used for section titles</p>
+                </div>
+
+                <div class="typography-item">
+                    <h3>Heading H3 - Subsection</h3>
+                    <p class="component-label">Used for subsections</p>
+                </div>
+
+                <div class="typography-item">
+                    <h4>Heading H4 - Card Title</h4>
+                    <p class="component-label">Used for card titles</p>
+                </div>
+
+                <div class="typography-item">
+                    <p>This is a standard paragraph text. It uses the Poppins font family for better readability on screens. This is a standard paragraph text.</p>
+                    <p class="component-label">Standard body text</p>
+                </div>
+
+                <div class="typography-item">
+                    <p class="text-muted">This is muted text commonly used for secondary information, descriptions, and metadata.</p>
+                    <p class="component-label">Muted text</p>
+                </div>
+
+                <div class="typography-item">
+                    <small>This is small text used for helper text, fine print, and secondary information.</small>
+                    <p class="component-label">Small text</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORMS SECTION -->
+        <div class="component-section" id="forms">
+            <div class="section-header">
+                <h2>Forms & Input Elements</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="component-item">
+                        <p class="component-label">Text Input</p>
+                        <div class="component-preview">
+                            <div class="mb-3">
+                                <label for="textInput" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="textInput" placeholder="Enter your name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="component-item">
+                        <p class="component-label">Email Input</p>
+                        <div class="component-preview">
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="component-item">
+                        <p class="component-label">Select Dropdown</p>
+                        <div class="component-preview">
+                            <div class="mb-3">
+                                <label for="selectInput" class="form-label">Select Option</label>
+                                <select class="form-select" id="selectInput">
+                                    <option selected>Choose...</option>
+                                    <option value="1">React Development</option>
+                                    <option value="2">UI/UX Design</option>
+                                    <option value="3">Consulting</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="component-item">
+                        <p class="component-label">Textarea</p>
+                        <div class="component-preview">
+                            <div class="mb-3">
+                                <label for="textareaInput" class="form-label">Message</label>
+                                <textarea class="form-control" id="textareaInput" rows="3" placeholder="Your message..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="component-item">
+                        <p class="component-label">Checkboxes</p>
+                        <div class="component-preview">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check1">
+                                <label class="form-check-label" for="check1">
+                                    I agree to the terms
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check2">
+                                <label class="form-check-label" for="check2">
+                                    Subscribe to newsletter
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="component-item">
+                        <p class="component-label">Radio Buttons</p>
+                        <div class="component-preview">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radiogroup" id="radio1" checked>
+                                <label class="form-check-label" for="radio1">
+                                    Option 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radiogroup" id="radio2">
+                                <label class="form-check-label" for="radio2">
+                                    Option 2
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANIMATIONS SECTION -->
+        <div class="component-section" id="animations">
+            <div class="section-header">
+                <h2>Interactive Effects & Animations</h2>
+            </div>
+            <div class="component-grid">
+                <div class="component-item">
+                    <p class="component-label">Hover Animations</p>
+                    <div class="component-preview">
+                        <button class="btn btn-dark">Hover Over Me</button>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Card Hover Effect</p>
+                    <div class="component-preview">
+                        <div class="card h-100 border-0 p-5">
+                            <div class="card-icon"><i class="fas fa-star"></i></div>
+                            <h5 class="card-title">Interactive Card</h5>
+                            <p class="card-text">Hover to see the smooth transform effect.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Icon Animation</p>
+                    <div class="component-preview">
+                        <div class="icon-item">
+                            <i class="fas fa-heart"></i>
+                            <p class="icon-label">Hover Icon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-item">
+                    <p class="component-label">Accent Shapes</p>
+                    <div class="component-preview" style="position: relative; height: 150px;">
+                        <div style="position: absolute; width: 100px; height: 100px; background-color: #1abc9c; border-radius: 50%; bottom: 10px; left: 10px; opacity: 0.15; animation: float 6s ease-in-out infinite;"></div>
+                        <div style="position: absolute; width: 80px; height: 80px; background-color: #1abc9c; border-radius: 50%; top: 20px; right: 20px; opacity: 0.15; animation: float 8s ease-in-out infinite reverse;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO SECTIONS -->
+        <div class="component-section" id="hero">
+            <div class="section-header">
+                <h2>Hero Sections</h2>
+            </div>
+            
+            <div class="component-item">
+                <p class="component-label">Hero Section - Centered</p>
+                <div style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); color: white; padding: 60px 30px; border-radius: 8px; text-align: center;">
+                    <h2 style="color: white; margin-bottom: 1rem;">Welcome To My Portfolio</h2>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">I create amazing digital experiences</p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+
+            <div class="component-item" style="margin-top: 2rem;">
+                <p class="component-label">Hero Section - With Layout</p>
+                <div style="background: linear-gradient(135deg, var(--light-bg) 0%, white 100%); padding: 60px 30px; border-radius: 8px;">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="section-label mb-3 d-inline-block">
+                                <span class="text-uppercase fw-semibold">Welcome</span>
+                            </div>
+                            <h2 style="margin-bottom: 1rem;">Senior Frontend Developer</h2>
+                            <p style="margin-bottom: 2rem; color: var(--text-light);">Building beautiful and responsive web experiences with modern technologies.</p>
+                            <div class="d-flex gap-3">
+                                <button class="btn btn-dark">Hire Me</button>
+                                <button class="btn btn-outline-dark">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <i class="fas fa-laptop" style="font-size: 4rem; color: #1abc9c;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS SECTION -->
+        <div class="component-section" id="testimonials">
+            <div class="section-header">
+                <h2>Testimonials & Social Proof</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 p-4">
+                        <div class="mb-3">
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text">"Excellent work! Vrushank delivered exactly what we needed. Highly professional and responsive."</p>
+                        <div class="d-flex align-items-center gap-3 mt-3">
+                            <div style="width: 50px; height: 50px; background: #1abc9c; border-radius: 50%;"></div>
+                            <div>
+                                <p style="margin: 0; font-weight: 600;">John Doe</p>
+                                <small style="color: var(--text-light);">CEO, Tech Company</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 p-4">
+                        <div class="mb-3">
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text">"Amazing attention to detail. Vrushank goes above and beyond to deliver quality results."</p>
+                        <div class="d-flex align-items-center gap-3 mt-3">
+                            <div style="width: 50px; height: 50px; background: #1abc9c; border-radius: 50%;"></div>
+                            <div>
+                                <p style="margin: 0; font-weight: 600;">Sarah Smith</p>
+                                <small style="color: var(--text-light);">Marketing Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 p-4">
+                        <div class="mb-3">
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="card-text">"Fast, reliable, and very knowledgeable. I would definitely work with Vrushank again."</p>
+                        <div class="d-flex align-items-center gap-3 mt-3">
+                            <div style="width: 50px; height: 50px; background: #1abc9c; border-radius: 50%;"></div>
+                            <div>
+                                <p style="margin: 0; font-weight: 600;">Mike Johnson</p>
+                                <small style="color: var(--text-light);">Project Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+     <!-- jQuery (required for FancyBox v3) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- FancyBox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Inline JavaScript for component navigation and interactions -->
+    <script>
+        // Initialize AOS for animations
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            easing: 'ease-in-out-cubic',
+            once: true
+        });
+
+        // Component Navigation
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Remove active class from all items and sections
+                document.querySelectorAll('.menu-item').forEach(el => el.classList.remove('active'));
+                document.querySelectorAll('.component-section').forEach(el => el.classList.remove('active'));
+                
+                // Add active class to clicked item and corresponding section
+                item.classList.add('active');
+                const sectionId = item.getAttribute('data-section');
+                const section = document.getElementById(sectionId);
+                
+                if (section) {
+                    section.classList.add('active');
+                    // Scroll to top of main content
+                    window.scrollTo({
+                        top: section.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Copy to clipboard functionality
+        document.querySelectorAll('.component-preview').forEach(preview => {
+            preview.addEventListener('click', function(e) {
+                if (e.target.closest('.btn, input, textarea, select')) return;
+                
+                // Optional: Add copy functionality
+                console.log('Component clicked - ready to copy');
+            });
+        });
+
+        // Add smooth transitions on section change
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .component-section.active {
+                animation: slideIn 0.4s ease;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

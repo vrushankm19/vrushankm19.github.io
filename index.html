@@ -1,623 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Vrushank Modi</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-        <link rel="stylesheet" href="assets/css/animate.css" />
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="assets/css/aos.css" />
-        <link rel="stylesheet" href="assets/css/ionicons.min.css" />
-        <link rel="stylesheet" href="assets/css/icomoon.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-    </head>
-    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"></a>
-                <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon icon-menu"></span> Menu
-                </button>
-                <div class="collapse navbar-collapse ftco-nav" id="ftco-nav">
-                    <ul class="navbar-nav nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#home-section" class="nav-link"><span>Home</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about-section" class="nav-link"><span>About</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills-section" class="nav-link"><span>Skills</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#experience" class="nav-link"><span>Experience</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#education" class="nav-link"><span>Education</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#projects" class="nav-link"><span>Projects</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact-section" class="nav-link"><span>Contact</span></a>
-                        </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrushank Modi - Senior Frontend Developer | React.js Expert</title>
+    <meta name="description" content="Senior Frontend Developer with 5+ years experience in React.js, Redux, Material UI. Available for immediate joining.">
+    
+  <!-- Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS (stable CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- FancyBox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  <!-- Your site CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar with scroll detection -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-icon"><i class="fas fa-code"></i></span>
+                Vrushank
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-4">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section with animations -->
+    <section id="home" class="py-5 py-lg-5 bg-light overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="section-label mb-4 d-inline-block">
+                        <span class="text-uppercase fw-semibold">Hi everyone, I'm Vrushank Modi</span>
+                    </div>
+                    <h1 class="display-4 fw-bold mb-4">Senior Frontend Developer & React.js Expert</h1>
+                    <p class="lead text-muted mb-4">5+ years building scalable, responsive web apps with React.js, Redux, Material UI, JavaScript, SCSS, Gulp & WordPress | Immediate Joiner</p>
+                    
+                    <div class="d-flex gap-3 mb-5 flex-wrap">
+                        <a href="mailto:vrushankm19@gmail.com" class="btn btn-dark btn-lg">
+                            <span class="me-2">Hire Me Now</span><i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/pdf/vrushank_cv_2025_react_redux.pdf" download class="btn btn-outline-dark btn-lg">
+                            <i class="fas fa-download me-2"></i><span>Download CV</span>
+                        </a>
+                        <a href="assets/pdf/vrushank_cv_2025_react_redux.pdf" data-fancybox="assets/pdf/vrushank_cv_2025_react_redux.pdf" class="btn btn-primary px-3" title="View Resume">
+                            <i class="fa-solid fa-eye"></i>
+                        </a>
+                    </div>
+
+                    <div>
+                        <p class="text-muted fw-medium mb-3">Find me on:</p>
+                        <div class="d-flex gap-3">
+
+                            <!-- Email -->
+                            <a href="mailto:vrushankm19@gmail.com" class="social-icon" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+
+                            <!-- Skype -->
+                            <a href="skype:vrushankm19?chat" class="social-icon" title="Skype">
+                                <i class="fab fa-skype"></i>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/vrushankm19" class="social-icon" title="GitHub" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/vrushank-modi-b99147193" class="social-icon" title="LinkedIn" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/9574417017" class="social-icon" title="WhatsApp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                            <!-- Phone -->
+                            <a href="tel:9574417017" class="social-icon" title="Call">
+                                <i class="fas fa-phone"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 position-relative mt-5 mt-md-0" data-aos="fade-down">
+                    <img src="assets/images/Vrushank Modi.png" alt="Vrushank Modi" class="img-fluid rounded" style="border-left: 6px solid #1a1a1a;">
+                    <div class="accent-shape" style="width: 200px; height: 200px; bottom: 20px; right: -40px;"></div>
+                    <div class="accent-shape accent-shape-2" style="width: 120px; height: 120px; bottom: -30px; right: 40px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with improved cards -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="mb-5" data-aos="fade-up">
+                <div class="section-label mb-4 d-inline-block">
+                    <span class="text-uppercase fw-semibold">Services</span>
+                </div>
+                <h2 class="display-6 fw-bold">What I Offer</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 border-0 border-end-5 p-5">
+                        <div class="mb-3 fs-1" style="color: #1abc9c;"><i class="fas fa-code"></i></div>
+                        <h5 class="card-title fw-bold mb-3">React.js Web Development</h5>
+                        <p class="card-text text-muted">High-performance SPAs & enterprise apps with React, Redux, Material UI</p>
+                        <span class="badge bg-light text-primary mt-3">40+ Projects</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 border-end-5 p-5">
+                        <div class="mb-3 fs-1" style="color: #1abc9c;"><i class="fas fa-mobile-alt"></i></div>
+                        <h5 class="card-title fw-bold mb-3">Responsive Design</h5>
+                        <p class="card-text text-muted">Pixel-perfect, mobile-first websites that work everywhere</p>
+                        <span class="badge bg-light text-primary mt-3">60+ Projects</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 border-end-5 p-5">
+                        <div class="mb-3 fs-1" style="color: #1abc9c;"><i class="fas fa-palette"></i></div>
+                        <h5 class="card-title fw-bold mb-3">Figma to Code</h5>
+                        <p class="card-text text-muted">Convert designs to clean, production-ready React/HTML code</p>
+                        <span class="badge bg-light text-primary mt-3">50+ Projects</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 border-0 border-end-5 p-5">
+                        <div class="mb-3 fs-1" style="color: #1abc9c;"><i class="fas fa-wordpress"></i></div>
+                        <h5 class="card-title fw-bold mb-3">WordPress + Elementor</h5>
+                        <p class="card-text text-muted">Custom themes & high-speed WordPress sites</p>
+                        <span class="badge bg-light text-primary mt-3">25+ Projects</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 border-end-5 p-5">
+                        <div class="mb-3 fs-1" style="color: #1abc9c;"><i class="fas fa-search"></i></div>
+                        <h5 class="card-title fw-bold mb-3">SEO Optimization</h5>
+                        <p class="card-text text-muted">Fast loading, semantic markup & SEO-friendly code</p>
+                        <span class="badge bg-light text-primary mt-3">30+ Projects</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 border-end-5 p-5">
+                        <div class="mb-3 fs-1" style="color: #1abc9c;"><i class="fas fa-headset"></i></div>
+                        <h5 class="card-title fw-bold mb-3">Immediate Availability</h5>
+                        <p class="card-text text-muted">Ready to join immediately | Expected CTC: ₹14 LPA</p>
+                        <span class="badge bg-light text-primary mt-3">Available Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-label mb-4 d-inline-block" data-aos="fade-up">
+                <span class="text-uppercase fw-semibold">About Me</span>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    
+                    <h2 class="display-5 fw-bold mb-4">Senior Frontend Developer | 5+ Years Experience</h2>
+                    <p class="text-muted mb-3">Currently at <strong>NO Brain IT Solutions Pvt. Ltd (Aug 2024 – Present)</strong>, Pune. Previously worked at Amura Marketing Technologies & X-Byte Enterprise Solutions. Expert in React.js, Redux, Material UI, JavaScript (ES6+), SCSS, Gulp, Bootstrap, WordPress. Delivered projects like Kylas CRM plugin, NPAV, NAFIS dashboard, M12 dashboard, etc.</p>
+                    <p class="text-muted mb-4"><strong>Notice Period:</strong> Immediate Joiner | <strong>Current CTC:</strong> ₹8 LPA | <strong>Expected CTC:</strong> ₹14 LPA</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-4">
+                            <div class="stat-number">5+</div>
+                            <p class="text-muted small">Years Experience</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-number">60+</div>
+                            <p class="text-muted small">Projects Delivered</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-number">30+</div>
+                            <p class="text-muted small">Happy Clients</p>
+                        </div>
+                    </div>
+
+                    <a href="mailto:vrushankm19@gmail.com" class="btn btn-dark btn-lg">
+                        <span class="me-2">Hire Me Now</span><i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 mt-5 mt-md-0" data-aos="fade-left">
+                    <h5 class="fw-bold mb-4"><i class="fas fa-briefcase me-2" style="color: #1abc9c;"></i> Experience Timeline</h5>
+                    <div class="ps-5" style="position: relative;">
+                        <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background-color: #1abc9c;"></div>
+                        
+                        <div class="mb-4 pb-3 timeline-item">
+                            <div class="timeline-marker"></div>
+                            <h6 class="fw-bold"><i class="fas fa-star" style="color: #1abc9c;"></i> NO Brain IT Solutions Pvt. Ltd</h6>
+                            <p class="text-muted small mb-2">Aug 2024 – Present | Pune</p>
+                            <p class="small">Frontend Developer – React.js, Redux, Material UI, WordPress + Elementor</p>
+                        </div>
+
+                        <div class="mb-4 pb-3 timeline-item">
+                            <div class="timeline-marker"></div>
+                            <h6 class="fw-bold"><i class="fas fa-star" style="color: #1abc9c;"></i> Amura Marketing Technologies</h6>
+                            <p class="text-muted small mb-2">Mar 2022 – Aug 2024</p>
+                            <p class="small">Sr. Web Developer – React, Gulp, Sass, SEO, Agile Scrum</p>
+                        </div>
+
+                        <div class="pb-3 timeline-item">
+                            <div class="timeline-marker"></div>
+                            <h6 class="fw-bold"><i class="fas fa-star" style="color: #1abc9c;"></i> X-Byte Enterprise Solutions</h6>
+                            <p class="text-muted small mb-2">Mar 2020 – Mar 2022</p>
+                            <p class="small">Frontend Developer – ES6+, Bootstrap, jQuery, Theme Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <div class="mb-5" data-aos="fade-up">
+                <div class="section-label mb-4 d-inline-block">
+                    <span class="text-uppercase fw-semibold">Education</span>
+                </div>
+                <h2 class="display-6 fw-bold">My Education & Certifications</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 border-0 border-end-5 p-5">
+                        <div class="mb-3 fs-1" style="color: #1abc9c;"><i class="fas fa-graduation-cap"></i></div>
+                        <h5 class="card-title fw-bold mb-3">B.C.A - Bachelor of Computer Applications</h5>
+                        <p class="card-text text-muted">P.D.Pandya College, Ahmedabad</p>
+                        <p class="card-text"><strong>Duration:</strong> 2015 - 2018</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 border-end-5 p-5">
+                        <div class="mb-3 fs-1" style="color: #1abc9c;"><i class="fas fa-certificate"></i></div>
+                        <h5 class="card-title fw-bold mb-3">Graphic & Web Designing</h5>
+                        <p class="card-text text-muted">Arena Animation Maninagar, Ahmedabad</p>
+                        <p class="card-text"><strong>Duration:</strong> May 2018 - Dec 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with progress bars -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="mb-5" data-aos="fade-up">
+                <div class="section-label mb-4 d-inline-block">
+                    <span class="text-uppercase fw-semibold">Skills</span>
+                </div>
+                <h2 class="display-6 fw-bold">Technical Expertise (2025)</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 border-0 border-start-5 p-4">
+                        <h6 class="fw-bold mb-3 d-flex align-items-center gap-2">
+                            <span style="width: 8px; height: 8px; background-color: #1abc9c; border-radius: 50%;"></span>
+                            Frontend Development
+                        </h6>
+                        <div class="d-flex flex-column gap-3">
+                            <div>
+                                <small class="fw-600 d-block mb-1">React.js</small>
+                                <div class="progress"><div class="skill-progress" style="width: 95%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">JavaScript (ES6+)</small>
+                                <div class="progress"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">HTML5 & CSS3</small>
+                                <div class="progress"><div class="skill-progress" style="width: 98%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">Bootstrap 5</small>
+                                <div class="progress"><div class="skill-progress" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 border-start-5 p-4">
+                        <h6 class="fw-bold mb-3 d-flex align-items-center gap-2">
+                            <span style="width: 8px; height: 8px; background-color: #1abc9c; border-radius: 50%;"></span>
+                            State & Styling
+                        </h6>
+                        <div class="d-flex flex-column gap-3">
+                            <div>
+                                <small class="fw-600 d-block mb-1">Redux / Redux Toolkit</small>
+                                <div class="progress"><div class="skill-progress" style="width: 92%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">Material UI</small>
+                                <div class="progress"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">Sass/SCSS</small>
+                                <div class="progress"><div class="skill-progress" style="width: 97%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">Gulp JS</small>
+                                <div class="progress"><div class="skill-progress" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 border-start-5 p-4">
+                        <h6 class="fw-bold mb-3 d-flex align-items-center gap-2">
+                            <span style="width: 8px; height: 8px; background-color: #1abc9c; border-radius: 50%;"></span>
+                            Tools & Others
+                        </h6>
+                        <div class="d-flex flex-column gap-3">
+                            <div>
+                                <small class="fw-600 d-block mb-1">Git & GitHub</small>
+                                <div class="progress"><div class="skill-progress" style="width: 88%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">Figma to Code</small>
+                                <div class="progress"><div class="skill-progress" style="width: 94%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">WordPress + Elementor</small>
+                                <div class="progress"><div class="skill-progress" style="width: 78%;"></div></div>
+                            </div>
+                            <div>
+                                <small class="fw-600 d-block mb-1">Responsive Design</small>
+                                <div class="progress"><div class="skill-progress" style="width: 98%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section with FancyBox gallery -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="mb-5" data-aos="fade-up">
+                <div class="section-label mb-4 d-inline-block">
+                    <span class="text-uppercase fw-semibold">Portfolio</span>
+                </div>
+                <h2 class="display-6 fw-bold">Real Projects Delivered</h2>
+            </div>
+
+            <div class="row g-4">
+
+    <!-- SANY -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="card h-100 border-0 border-end-5 p-0 project-card">
+            <div class="project-image">
+                <div href="assets/images/1.webp" data-fancybox="gallery" data-caption="Sany">
+                    <img src="assets/images/1.webp" alt="Sany">
+                    <div class="project-overlay">
+                        <a href="assets/images/1.webp" data-fancybox="gallery" title="View Project">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="https://www.sany.in/" target="_blank" title="Open Website">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 project-card-title">
+                <h5 class="card-title fw-bold mb-2">Sany</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- HROne -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 border-0 border-end-5 p-0 project-card">
+            <div class="project-image">
+                <div href="assets/images/2.webp" data-fancybox="gallery" data-caption="HROne">
+                    <img src="assets/images/2.webp" alt="HROne">
+                    <div class="project-overlay">
+                        <a href="assets/images/2.webp" data-fancybox="gallery" title="View Project">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="https://hrone.cloud/" target="_blank" title="Open Website">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 project-card-title">
+                <h5 class="card-title fw-bold mb-2">HROne</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- NPAV -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 border-0 border-end-5 p-0 project-card">
+            <div class="project-image">
+                <div href="assets/images/5.webp" data-fancybox="gallery" data-caption="NPAV">
+                    <img src="assets/images/5.webp" alt="NPAV">
+                    <div class="project-overlay">
+                        <a href="assets/images/5.webp" data-fancybox="gallery" title="View Project">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="http://npav.wpstaging.amura.in/" target="_blank" title="Open Website">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 project-card-title">
+                <h5 class="card-title fw-bold mb-2">NPAV</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Uneecops -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 border-0 border-end-5 p-0 project-card">
+            <div class="project-image">
+                <div href="assets/images/6.webp" data-fancybox="gallery" data-caption="Uneecops">
+                    <img src="assets/images/6.webp" alt="Uneecops">
+                    <div class="project-overlay">
+                        <a href="assets/images/6.webp" data-fancybox="gallery" title="View Project">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="https://www.uneecops.com/" target="_blank" title="Open Website">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 project-card-title">
+                <h5 class="card-title fw-bold mb-2">Uneecops</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Land Global -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100 border-0 border-end-5 p-0 project-card">
+            <div class="project-image">
+                <div href="assets/images/4.webp" data-fancybox="gallery" data-caption="Land Global">
+                    <img src="assets/images/4.webp" alt="Land Global">
+                    <div class="project-overlay">
+                        <a href="assets/images/4.webp" data-fancybox="gallery" title="View Project">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="https://land.global/" target="_blank" title="Open Website">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 project-card-title">
+                <h5 class="card-title fw-bold mb-2">Land Global</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Natural Remedies Humanhealth -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card h-100 border-0 border-end-5 p-0 project-card">
+            <div class="project-image">
+                <div href="assets/images/7.webp" data-fancybox="gallery" data-caption="Natural Remedies Humanhealth">
+                    <img src="assets/images/7.webp" alt="Natural Remedies Humanhealth">
+                    <div class="project-overlay">
+                        <a href="assets/images/7.webp" data-fancybox="gallery" title="View Project">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="https://naturalremedieshumanhealth.com/" target="_blank" title="Open Website">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 project-card-title">
+                <h5 class="card-title fw-bold mb-2">Natural Remedies Humanhealth</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nafis -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card h-100 border-0 border-end-5 p-0 project-card">
+            <div class="project-image">
+                <div href="assets/images/Nafis.png" data-fancybox="gallery" data-caption="Nafis">
+                    <img src="assets/images/Nafis.png" alt="Nafis">
+                    <div class="project-overlay">
+                        <a href="assets/images/Nafis.png" data-fancybox="gallery" title="View Project">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="https://nafis.gov.ae/" target="_blank" title="Open Website">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 project-card-title">
+                <h5 class="card-title fw-bold mb-2">Nafis</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- M12 -->
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card h-100 border-0 border-end-5 p-0 project-card">
+            <div class="project-image">
+                <div href="assets/images/m12.png" data-fancybox="gallery" data-caption="M12">
+                    <img src="assets/images/m12.png" alt="M12">
+                    <div class="project-overlay">
+                        <a href="assets/images/m12.png" data-fancybox="gallery" title="View Project">
+                            <i class="fas fa-eye"></i>
+                        </a>
+                        <a href="" target="_blank" title="Open Website">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 project-card-title">
+                <h5 class="card-title fw-bold mb-2">M12</h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <section id="home-section" class="hero">
-            <div class="home-slider owl-carousel">
-                <div class="slider-item">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                            <div class="one-third js-fullheight order-md-last img" style="background-image: url(assets/images/vrushank.webp);">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                                <div class="text">
-                                    <span class="subheading">Hello</span>
-                                    <h1 class="mb-4 mt-3">I'm <span>Vrushank Modi</span></h1>
-                                    <p class="ftco-nav d-s-none">
-                                        <a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a>
-                                        <a href="#projects" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
-                                        <a data-fancybox href="assets/pdf/Vrushank_CV_2024_React-Redux.pdf" class="btn btn-white btn-outline-white py-3 px-4" title="View Resume"><span class="icon-visibility"></span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <ul class="footer-links">
+                        <li><a href="tel:+919574417017">+91 95744 17017</a></li>
+                        <li><a href="mailto:vrushankm19@gmail.com">vrushankm19@gmail.com</a></li>
+                        <li><a href="https://github.com/vrushankm19">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/vrushank-modi-b99147193">LinkedIn</a></li>
+                    </ul>
                 </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Availability</h6>
+                    <p class="small mb-3">Immediate Joiner</p>
+                    <div class="footer-social">
 
-                <div class="slider-item">
-                    <div class="overlay"></div>
-                    <div class="container">
-                        
-                        <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                            <div class="one-third js-fullheight order-md-last img" style="background-image: url(assets/images/vrushank.webp);">
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                                <div class="text">
-                                    <span class="subheading">Hello</span>
-                                    <h1 class="mb-4 mt-3">I'm a <span>Front End Developer</span> based in <span>Pune</span></h1>
-                                    <h2 class="mb-4">in Amura Marketing Technologies</h2>
-                                    <p class="ftco-nav d-s-none">
-                                        <a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a>
-                                        <a href="#projects" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
-                                        <a data-fancybox href="assets/pdf/Vrushank_CV_2024_React-Redux.pdf" class="btn btn-white btn-outline-white py-3 px-4" title="View Resume"><span class="icon-visibility"></span></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Email -->
+                        <a href="mailto:vrushankm19@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+                        <!-- Phone -->
+                        <a href="tel:9574417017" title="Call">
+                            <i class="fas fa-phone"></i>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/9574417017" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/vrushankm19" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/vrushank-modi-b99147193" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
                     </div>
+
                 </div>
             </div>
-        </section>
-
-        <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-            <div class="container">
-                <p class="ftco-nav text-center mb-5 d-lg-none d-md-none">
-                    <a href="#contact-section" class="btn btn-primary py-3 px-4 mx-2">Hire me</a>
-                    <a href="#projects" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
-                </p>
-                <div class="row d-flex">
-                    <div class="col-md-6 col-lg-5 d-flex">
-                        <div class="img-about img d-flex align-items-stretch">
-                            <div class="overlay"></div>
-                            <div class="img d-flex align-self-stretch align-items-center" style="background-image: url(assets/images/about.webp);"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-                        <div class="row justify-content-start pb-3 pb-md-0">
-                            <div class="col-md-12 heading-section ftco-animate">
-                                <h1 class="big">About</h1>
-                                <h2 class="mb-4">About Me</h2>
-                                <p>Experienced Web Developer skilled in React.js, Gulp.JS, GitHub, Sass, JavaScript, HTML 5, CSS 3, Bootstrap 4, and JQuery.</p>
-                                <ul class="about-info mt-4 px-md-0 px-2">
-                                    <li class="d-flex"><span>Name:</span> <span>Vrushank Modi</span></li>
-                                    <li class="d-flex"><span>Date of birth:</span> <span>November 16, 1997</span></li>
-                                    <li class="d-flex"><span>Address:</span> <span>Mahalunge, Pune</span></li>
-                                    <li class="d-flex"><span>Zip code:</span> <span>412115</span></li>
-                                    <li class="d-flex">
-                                        <span>Email:</span> <span><a href="mailto:vrushankm19@gmail.com">vrushankm19@gmail.com</a></span>
-                                    </li>
-                                    <li class="d-flex">
-                                        <span>Phone: </span> <span><a href="tel:9574417017">+91 95744 17017</a></span>
-                                    </li>
-                                    <li class="d-flex">
-                                        <span>Skype: </span> <span><a href="skype:vrushankm19?chat">live:vrushankm19</a></span>
-                                    </li>
-                                    <li class="d-flex">
-                                        <span>GitHub: </span> <span><a href="https://github.com/vrushankm19">https://github.com/vrushankm19</a></span>
-                                    </li>
-                                    <li class="d-flex">
-                                        <span>Linkedin: </span> <span><a href="https://www.linkedin.com/in/vrushank-modi-b99147193">https://www.linkedin.com/in/vrushank-modi-b99147193</a></span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="counter-wrap ftco-animate d-flex mt-md-3">
-                            <div class="text">
-                                <p class="mb-4">
-                                    <span class="number" data-number="60">0</span>
-                                    <span>Project completed</span>
-                                </p>
-                                <div class="d-flex">
-                                    <a href="assets/pdf/Vrushank_CV_2024_React-Redux.pdf" class="btn btn-primary py-3 px-3 mr-3" download="">Download CV</a>
-                                    <a data-fancybox href="assets/pdf/Vrushank_CV_2024_React-Redux.pdf" class="btn btn-white btn-outline-white py-3 px-4" title="View Resume"><span class="icon-visibility"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="border-top border-secondary pt-5 text-center">
+                <p class="text-white small mb-0">&copy; 2025 Vrushank Modi. All rights reserved.</p>
             </div>
-        </section>
-
-        <section class="ftco-section" id="skills-section">
-            <div class="container">
-                <div class="row justify-content-center pb-3 pb-md-0">
-                    <div class="col-md-12 heading-section text-center ftco-animate">
-                        <h1 class="big big-2">Skills</h1>
-                        <h2 class="mb-4">My Skills</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>React.js</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-3" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                    <span>93%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>Redux Toolkit</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                    <span>90%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>Gulp JS (Responsive Layout)</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-2" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-                                    <span>95%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>HTML5</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-                                    <span>95%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>Sass</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 97%;">
-                                    <span>97%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>Javascript</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                    <span>80%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>JQuery</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                    <span>80%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>CSS3</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                    <span>93%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>Git Hub</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                    <span>80%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>Git Lab</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                    <span>80%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>WordPress</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-5" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                    <span>60%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box">
-                        <div class="progress-wrap ftco-animate">
-                            <h3>Bootstrap 5</h3>
-                            <div class="progress">
-                                <div class="progress-bar color-5" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-                                    <span>95%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                   
-                </div>
-            </div>
-        </section>
-
-        <section class="ftco-section ftco-no-pb" id="experience">
-            <div class="container">
-                <div class="row justify-content-center pb-3 pb-md-0">
-                    <div class="col-md-10 heading-section text-center ftco-animate">
-                        <h1 class="big big-2">Experience</h1>
-                        <h2 class="mb-4">Experience</h2>
-                        <p>Extensive Experience in effectively executing a diverse range of projects, highlighting proficiency in various aspects of web development and technology.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
-                            <span class="date">(Mar 2022-Present)</span>
-                            <h2>Sr. Front End Developer</h2>
-                            <span class="position">Amura Marketing Technologies</span>
-                            <p class="mt-4">I have worked on web development projects for several well-known companies in this organization, utilizing a variety of different technologies to create websites development</p>
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
-                            <span class="date">(Mar 2020-Mar 2022)</span>
-                            <h2>Front End Developer</h2>
-                            <span class="position">X-Byte Enterprise Solutions.</span>
-                            <p class="mt-4">
-                                At this company, I've contributed to web development, designing dual-theme websites, crafting e-commerce platforms, and managing projects for Arab region countries, showcasing versatility in my role. 
-                            </p>
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
-                            <span class="date">(Jan 2019-Mar 2020)</span>
-                            <h2>Graphic Designer & Web Designer</h2>
-                            <span class="position">Brainfetchers Infotech</span>
-                            <p class="mt-4">
-                                I have worked as a Graphic Designer and Web Developer in this company, handling various projects. Additionally, I have also taken up freelancing projects and worked on projects from international clients.
-                            </p>
-                        </div>
-                        </div>
-                </div>
-                <div class="row justify-content-center mt-5">
-                    <div class="col-md-6 text-center ftco-animate">
-                        <div class="d-flex justify-content-center">
-                            <a href="assets/pdf/Vrushank_CV_2024_React-Redux.pdf" class="btn btn-primary py-3 px-3 mr-3" download="">Download CV</a>
-                            <a data-fancybox href="assets/pdf/Vrushank_CV_2024_React-Redux.pdf" class="btn btn-white btn-outline-white py-3 px-4" title="View Resume"><span class="icon-visibility"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        <section class="ftco-section ftco-no-pb" id="education">
-            <div class="container">
-                <div class="row justify-content-center pb-3 pb-md-0">
-                    <div class="col-md-10 heading-section text-center ftco-animate">
-                        <h1 class="big big-2">Education</h1>
-                        <h2 class="mb-4">Education</h2>
-                        <p>I have charted a comprehensive educational journey that signifies my dedication to learning and development.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
-                            <span class="date">(Apr 2015-May 2018)</span>
-                            <h2>B.C.A</h2>
-                            <span class="position">P.D.Pandya College,Ahmedabad.</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="resume-wrap ftco-animate">
-                            <span class="date">(May 2018-Dec 2018)</span>
-                            <h2>Graphic and Web Designing</h2>
-                            <span class="position">Arena Animation Maninagar, Ahmedabad.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center mt-5">
-                    <div class="col-md-6 text-center ftco-animate">
-                        <div class="d-flex justify-content-center">
-                            <a href="assets/pdf/Vrushank_CV_2024_React-Redux.pdf" class="btn btn-primary py-3 px-3 mr-3" download="">Download CV</a>
-                            <a data-fancybox href="assets/pdf/Vrushank_CV_2024_React-Redux.pdf" class="btn btn-white btn-outline-white py-3 px-4" title="View Resume"><span class="icon-visibility"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ftco-section" id="projects">
-            <div class="container">
-                <div class="row justify-content-center mb-5 pb-3 pb-md-0">
-                    <div class="col-md-7 heading-section text-center ftco-animate">
-                        <h1 class="big big-2">Project</h1>
-                        <h2 class="mb-4">Our Project</h2>
-                        <p>Contributed to the successful completion of a prominent project, showcasing my skills in web development and technology expertise.</p>
-                    </div>
-                </div>
-                <div class="row d-flex">
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="blog-entry justify-content-end">
-                            <a target="_blank" href="https://www.sany.in/" class="block-20"> 
-                                <img loading="lazy" width="349" height="160" src="assets/images/1.webp" alt="assets/images/1.webp">
-                            </a>
-                            <div class="text mt-3 float-right d-block">
-                                <div class="d-flex align-items-center mb-3 meta"></div>
-                                <h3 class="heading"><a target="_blank" href="https://www.sany.in/">Sany</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="blog-entry justify-content-end">
-                            <a target="_blank" href="https://hrone.cloud/" class="block-20">
-                                <img loading="lazy" width="349" height="160" src="assets/images/2.webp" alt="assets/images/2.webp">
-                            </a>
-                            <div class="text mt-3 float-right d-block">
-                                <div class="d-flex align-items-center mb-3 meta"></div>
-                                <h3 class="heading"><a target="_blank" href="https://hrone.cloud/">HROne</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="blog-entry justify-content-end">
-                            <a target="_blank" href="http://npav.wpstaging.amura.in/" class="block-20">
-                                <img loading="lazy" width="349" height="160" src="assets/images/5.webp" alt="assets/images/5.webp">
-                            </a>
-                            <div class="text mt-3 float-right d-block">
-                                <div class="d-flex align-items-center mb-3 meta"></div>
-                                <h3 class="heading"><a target="_blank" href="http://npav.wpstaging.amura.in/">NPAV</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="blog-entry justify-content-end">
-                            <a target="_blank" href="https://www.uneecops.com/" class="block-20">
-                                <img loading="lazy" width="349" height="160" src="assets/images/6.webp">                              " alt="assets/images/6.webp">                                
-                            </a>
-                            <div class="text mt-3 float-right d-block">
-                                <div class="d-flex align-items-center mb-3 meta"></div>
-                                <h3 class="heading"><a target="_blank" href="https://www.uneecops.com/">Uneecops</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="blog-entry justify-content-end">
-                            <a target="_blank" href="https://land.global/" class="block-20">
-                                <img loading="lazy" width="349" height="160" src="assets/images/4.webp" alt="assets/images/4.webp">
-                            </a>
-                            <div class="text mt-3 float-right d-block">
-                                <div class="d-flex align-items-center mb-3 meta"></div>
-                                <h3 class="heading"><a target="_blank" href="https://land.global/">Land Global</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="blog-entry justify-content-end">
-                            <a target="_blank" href="https://naturalremedieshumanhealth.com/" class="block-20">
-                                <img loading="lazy" width="349" height="160" src="assets/images/7.webp" alt="assets/images/7.webp">
-                            </a>
-                            <div class="text mt-3 float-right d-block">
-                                <div class="d-flex align-items-center mb-3 meta"></div>
-                                <h3 class="heading"><a target="_blank" href="https://naturalremedieshumanhealth.com/">Natural Remedies Humanhealth</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-            <div class="container">
-                <div class="row d-md-flex align-items-center">
-                    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18">
-                            <div class="text">
-                                <strong class="number" data-number="4">0</strong>
-                                <span>Experience</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                        <div class="block-18">
-                            <div class="text">
-                                <strong class="number" data-number="60">0</strong>
-                                <span>Complete Projects</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ftco-section ftco-hireme img margin-top ">
-            <img loading="lazy" class="ftco-hireme-img" width="349" height="160" src="assets/images/bg_1.webp" alt="assets/images/bg_1.webp">
-            <div class="container ftco-hireme-con">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 ftco-animate text-center ftco-nav">
-                        <h2>I'm <span>Available</span> for Interview</h2>
-                        <p class="mb-0"><a href="#contact-section" class="btn btn-primary py-3 px-5">Hire me</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-            <div class="container">
-                <div class="row justify-content-center mb-5 pb-3 pb-md-0">
-                    <div class="col-md-7 heading-section text-center ftco-animate">
-                        <h1 class="big big-2">Contact</h1>
-                        <h2 class="mb-4">Contact Me</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                    </div>
-                </div>
-
-                <div class="row d-flex contact-info mb-5">
-                    <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                        <div class="align-self-stretch box p-4 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="icon-map-signs"></span>
-                            </div>
-                            <h3 class="mb-4">Address</h3>
-                            <a>Mahalunge, Pune</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                        <div class="align-self-stretch box p-4 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="icon-phone2"></span>
-                            </div>
-                            <h3 class="mb-4">Contact Number</h3>
-                            <a href="tel:95744 17017">+91 95744 17017</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                        <div class="align-self-stretch box p-4 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="icon-paper-plane"></span>
-                            </div>
-                            <h3 class="mb-4">Email Address</h3>
-                            <a href="mailto:vrushankm19@gmail.com">vrushankm19@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                        <div class="align-self-stretch box p-4 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="icon-globe"></span>
-                            </div>
-                            <h3 class="mb-4">Website</h3>
-                            <a target="_blank" href="https://vrushankm19.github.io/">https://vrushankm19.github.io/</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="ftco-footer ftco-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4">
-                            <h2 class="ftco-heading-2">About</h2>
-                            <p>Experienced Web Developer skilled in Gulp JS, GitHub, React, Redux , Sass, JavaScript, HTML 5, CSS 3, Bootstrap 4, and JQuery. Proven team player, dedicated to delivering exceptional results by collaborating with developers, designers, and stakeholders.</p>
-                            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                                <li class="ftco-animate">
-                                    <a target="_blank" href="mailto:vrushankm19@gmail.com"><span class="icon-envelope"></span></a>
-                                </li>
-                                <li class="ftco-animate">
-                                    <a target="_blank" href="skype:vrushankm19?chat"><span class="icon-skype"></span></a>
-                                </li>
-                                <li class="ftco-animate">
-                                    <a target="_blank" href="https://github.com/vrushankm19"><span class="icon-git"></span></a>
-                                </li>
-                                <li class="ftco-animate">
-                                    <a target="_blank" href="https://www.linkedin.com/in/vrushank-modi-b99147193"><span class="icon-linkedin-square"></span></a>
-                                </li>
-                                <li class="ftco-animate">
-                                    <a target="_blank" href="whatsapp://send?phone=+9574417017"><span class="icon-whatsapp"></span></a>
-                                </li>
-                                <li class="ftco-animate">
-                                    <a target="_blank" href="tel:9574417017"><span class="icon-phone"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4">
-                            <div class="block-23 mb-3">
-                                <ul>
-                                    <li><a><span class="icon icon-map-marker"></span><span class="text">Phase 1, Hinjawadi, Pune</span></a>	</li>
-                                    <li>
-                                        <a href="tel:9574417017"><span class="icon icon-phone"></span><span class="text">+91 95744 17017</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:vrushankm19@gmail.com"><span class="icon icon-envelope"></span><span class="text">vrushankm19@gmail.com</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <div id="ftco-loader" class="show fullscreen">
-            <svg class="circular" width="48px" height="48px">
-                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-            </svg>
         </div>
+    </footer>
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
-        
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="assets/js/jquery.waypoints.min.js"></script>
-        <script src="assets/js/jquery.stellar.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        
-        <script src="assets/js/aos.js"></script>
-        <script src="assets/js/jquery.animateNumber.min.js"></script>
-        <script src="assets/js/scrollax.min.js"></script>
+   <!-- jQuery (required for FancyBox v3) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <script src="assets/js/main.js"></script>
-    </body>
+  <!-- FancyBox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Inline JS (wrapped for DOM readiness) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize AOS
+      if (window.AOS) AOS.init({ duration: 900, offset: 100, once: true });
+
+      // Navbar scroll effect
+      const navbar = document.querySelector('.navbar');
+      function onScroll() {
+        if (window.scrollY > 50) navbar.classList.add('scrolled');
+        else navbar.classList.remove('scrolled');
+      }
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+
+      // Smooth scrolling for local anchors only
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (!href || href === '#' ) return;
+          // skip if it's not an in-page hash (e.g., mailto or external)
+          if (!href.startsWith('#')) return;
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+      // Active nav link on scroll
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      function updateActiveLink() {
+        let current = '';
+        sections.forEach(sec => {
+          const top = sec.offsetTop - 200;
+          if (pageYOffset >= top) current = sec.id;
+        });
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+        });
+      }
+      window.addEventListener('scroll', updateActiveLink);
+      updateActiveLink();
+
+      // FancyBox init (if loaded)
+      if (window.jQuery && jQuery.fancybox) {
+        $('[data-fancybox]').fancybox({
+          buttons: ['slideShow','fullScreen','share','download','zoom','close'],
+          protect: true
+        });
+      }
+
+      // Simple counter logic (keeps your original behavior)
+      let countersStarted = false;
+      function startCounters() {
+        if (countersStarted) return; countersStarted = true;
+        document.querySelectorAll('.stat-number').forEach(el => {
+          const raw = el.dataset.target || el.textContent.replace('+','').trim();
+          const target = parseInt(raw) || 0;
+          let current = 0;
+          const step = Math.max(1, Math.round(target / 30));
+          const id = setInterval(() => {
+            current += step;
+            if (current >= target) { el.textContent = target + '+'; clearInterval(id); }
+            else el.textContent = current + '+';
+          }, 30);
+        });
+      }
+      // observe about section
+      const about = document.getElementById('about');
+      if (about && window.IntersectionObserver) {
+        const obs = new IntersectionObserver(entries => {
+          entries.forEach(e => { if (e.isIntersecting) startCounters(); });
+        }, {threshold:0.5});
+        obs.observe(about);
+      }
+    });
+  </script>
+</body>
 </html>
