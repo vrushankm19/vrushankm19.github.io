@@ -146,7 +146,7 @@ p {
 
 .btn {
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 0px;
   padding: 0.75rem 1.5rem;
   transition: var(--transition);
   display: inline-flex;
@@ -165,7 +165,7 @@ p {
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: rgba(26, 188, 156, 0.1);
+  background-color: var(--primary-color);
   transition: var(--transition);
   z-index: -1;
 }
@@ -231,6 +231,48 @@ p {
 .btn-sm {
   padding: 0.5rem 1rem;
   font-size: 0.85rem;
+}
+
+.btn-modern {
+    background: #000; /* black button */
+    color: #fff;
+    padding: 1rem 2.2rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    /* border-radius: 6px; */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* green offset border */
+.btn-modern::after {
+    content: "";
+    position: absolute;
+    left: 6px;    /* same offset */
+    bottom: -6px; /* same offset */
+    width: 100%;
+    height: 100%;
+    background-color: #00c39a;
+    border: 2px solid #000; /* your primary green */
+    /* border-radius: 6px; */
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+/* hover effect */
+.btn-modern:hover {
+    /* transform: translateY(-3px); */
+}
+
+.btn-modern:hover::after {
+    left: 10px;
+    bottom: -10px;
+    opacity: 0.9;
 }
 
 /* ========================================
@@ -330,6 +372,83 @@ p {
   bottom: -8px;
   left: -8px;
 }
+.banner-circle{
+  position: relative;
+  /* z-index: 2; */
+}
+
+.banner-circle img{
+  position: relative;
+  z-index: 2;
+}
+
+.banner-circle::before {
+    content: "";
+    position: absolute;
+    width: 94%;
+    height: 82.5%;
+    border-radius: 50%;
+    
+    /* 🔥 same animated gradient (but visible background) */
+    background: linear-gradient(
+        -45deg,
+        #1abc9c,
+        #16a085,
+        #565a78,
+        #1abc9c
+    );
+    background-size: 300% 300%;
+    animation: gradientMove 6s ease infinite;
+    
+    bottom: -0.3%;
+    left: 1.7%;
+    /* opacity: 0.5; */
+}
+
+/* Existing gradient animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.banner-text {
+    font-weight: 800;
+    background: linear-gradient(
+        -45deg,
+        #1abc9c,
+        #16a085,
+        #565a78,
+        #1abc9c
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease infinite;
+    position: relative;
+}
+
+/* Smooth animated gradient movement */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Optional: soft glow around text for premium feel */
+.banner-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    opacity: 0.25;
+    z-index: -1;
+}
 
 /* ========================================
    SOCIAL ICONS
@@ -365,7 +484,7 @@ p {
   background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
   border-radius: 50%;
   opacity: 0.4;
-  z-index: 1;
+  z-index: 3;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -904,6 +1023,7 @@ section:nth-child(even) {
     padding: 0.75rem 1.5rem;
     font-size: 0.95rem;
   }
+  
 
   .navbar-brand {
     font-size: 1.25rem;
