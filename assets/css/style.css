@@ -624,6 +624,7 @@ p {
   justify-content: center;
   width: 40px;
   height: 40px;
+  flex: 0 0 40px;
   border-radius: 50%;
   border: 1px solid #444;
   color: #999;
@@ -945,7 +946,7 @@ section:nth-child(even) {
 }
 
 .text-primary {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 .text-dark {
