@@ -3,8 +3,12 @@
    ======================================== */
 
 :root {
+  /* Core color palette 3 colors */
   --primary-color: #1abc9c;
   --primary-dark: #16a085;
+  --secondary-color: #565a78;
+  
+    /* Bootstrap color variables for better integration */
   --bs-primary-rgb: var(--primary-color);
   --dark-bg: #1a1a1a;
   --light-bg: #f8f9fa;
@@ -488,7 +492,7 @@ p {
     border-radius: 50%;
   
     /* 🔥 same animated gradient (but visible background) */
-  background: linear-gradient(-45deg, var(--primary-color), #16a085, #565a78, var(--primary-color));
+  background: linear-gradient(-45deg, var(--primary-color), var(--primary-dark), var(--secondary-color), var(--primary-color));
     background-size: 300% 300%;
     animation: gradientMove 6s ease infinite;
   
@@ -502,11 +506,11 @@ p {
   0% {
       background-position: 0% 50%;
     }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+}
 
 .banner-text {
   font-weight: 800;
-  background: linear-gradient(-45deg, var(--primary-color), #16a085, #565a78, var(--primary-color));
+  background: linear-gradient(-45deg, var(--primary-color), var(--primary-dark), var(--secondary-color), var(--primary-color));
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -730,7 +734,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(26, 188, 156, 0.95), rgba(22, 160, 133, 0.95));
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
   display: flex;
   align-items: center;
   justify-content: center;
