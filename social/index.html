@@ -156,6 +156,28 @@
     overflow:hidden;
     cursor:pointer;
     transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease, background .22s ease;
+    opacity:0;
+    animation:cardIn .6s cubic-bezier(.16,1,.3,1) forwards;
+  }
+
+  @keyframes cardIn{
+    from{opacity:0; transform:translateY(16px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  /* one tasteful tap-ripple for touch/interactive feel, contained within the card */
+  .ripple{
+    position:absolute;
+    border-radius:50%;
+    background:var(--accent);
+    opacity:.28;
+    transform:scale(0);
+    pointer-events:none;
+    z-index:0;
+    animation:rippleAnim .6s ease-out forwards;
+  }
+  @keyframes rippleAnim{
+    to{transform:scale(1); opacity:0;}
   }
 
   .card::before{
@@ -226,6 +248,8 @@
   .card.whatsapp { --accent:#25d366; --accent-shadow:rgba(37,211,102,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(37,211,102,0.18), transparent 60%); }
   .card.phone    { --accent:var(--amber); --accent-shadow:rgba(227,179,65,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(227,179,65,0.18), transparent 60%); }
   .card.email    { --accent:#7aa2f7; --accent-shadow:rgba(122,162,247,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(122,162,247,0.18), transparent 60%); }
+  .card.skype    { --accent:#00aff0; --accent-shadow:rgba(0,175,240,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(0,175,240,0.18), transparent 60%); }
+  .card.location { --accent:#f97362; --accent-shadow:rgba(249,115,98,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(249,115,98,0.18), transparent 60%); }
 
   .card.linkedin { --accent:#0a66c2; --accent-shadow:rgba(10,102,194,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(10,102,194,0.18), transparent 60%); }
   .card.naukri   { --accent:#ff7e00; --accent-shadow:rgba(255,126,0,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(255,126,0,0.18), transparent 60%); }
@@ -273,6 +297,8 @@
   @media (prefers-reduced-motion: reduce){
     .cursor{animation:none;}
     .card, .icon-badge, .arrow, .toast{transition:none;}
+    .card{animation:none; opacity:1;}
+    .ripple{display:none;}
   }
 
   /* Focus visibility for keyboard users */
@@ -291,12 +317,63 @@
       <span class="dot r"></span>
       <span class="dot y"></span>
       <span class="dot g"></span>
-      <span class="terminal-title">rohan@dev: ~/contact</span>
+      <span class="terminal-title">vrushank@dev: ~/contact</span>
     </div>
     <div class="terminal-body">
       <div class="prompt-line"><span class="sym">$</span> whoami</div>
-      <div class="whoami-name">Your Name<span class="cursor"></span></div>
-      <div class="whoami-role">Full-Stack Developer</div>
+      <div class="whoami-name">Vrushank Modi<span class="cursor"></span></div>
+      <div class="whoami-role">Senior Frontend Developer || React.js</div>
+    </div>
+  </div>
+
+    <!-- CONTACT -->
+  <div class="section">
+    <div class="section-label"><span class="sym">#</span> contact</div>
+    <div class="grid">
+      <a class="card whatsapp" href="https://wa.me/919574417017" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="card-text">
+          <div class="card-label">WhatsApp</div>
+          <div class="card-sub">+91 95744 17017</div>
+        </div>
+      </a>
+
+      <a class="card phone" href="tel:+919574417017">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-solid fa-phone"></i></div>
+        <div class="card-text">
+          <div class="card-label">Call</div>
+          <div class="card-sub">+91 95744 17017</div>
+        </div>
+      </a>
+
+      <a class="card email" href="mailto:vrushankm19@gmail.com">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-solid fa-envelope"></i></div>
+        <div class="card-text">
+          <div class="card-label">Email</div>
+          <div class="card-sub">vrushankm19@gmail.com</div>
+        </div>
+      </a>
+
+      <a class="card skype" href="skype:live:vrushankm19?chat">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-skype"></i></div>
+        <div class="card-text">
+          <div class="card-label">Skype</div>
+          <div class="card-sub">live:vrushankm19</div>
+        </div>
+      </a>
+
+      <a class="card location" href="https://maps.app.goo.gl/pBhueSSeuUw1Y5z96" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="card-text">
+          <div class="card-label">Location</div>
+          <div class="card-sub">view on maps</div>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -342,76 +419,34 @@
     </div>
   </div>
 
-  <!-- CONTACT -->
-  <div class="section">
-    <div class="section-label"><span class="sym">#</span> contact</div>
-    <div class="grid">
-      <a class="card whatsapp" href="https://wa.me/919999999999" target="_blank" rel="noopener">
-        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-        <div class="icon-badge"><i class="fa-brands fa-whatsapp"></i></div>
-        <div class="card-text">
-          <div class="card-label">WhatsApp</div>
-          <div class="card-sub">+91 99999 99999</div>
-        </div>
-      </a>
-
-      <a class="card phone" href="tel:+919999999999">
-        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-        <div class="icon-badge"><i class="fa-solid fa-phone"></i></div>
-        <div class="card-text">
-          <div class="card-label">Call</div>
-          <div class="card-sub">+91 99999 99999</div>
-        </div>
-      </a>
-
-      <a class="card email" href="mailto:you@example.com">
-        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-        <div class="icon-badge"><i class="fa-solid fa-envelope"></i></div>
-        <div class="card-text">
-          <div class="card-label">Email</div>
-          <div class="card-sub">you@example.com</div>
-        </div>
-      </a>
-    </div>
-  </div>
-
   <!-- PROFESSIONAL / JOB -->
   <div class="section">
     <div class="section-label"><span class="sym">#</span> professional</div>
     <div class="grid">
-      <a class="card linkedin" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+      <a class="card linkedin" href="https://www.linkedin.com/in/vrushank-modi-b99147193" target="_blank" rel="noopener">
         <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         <div class="icon-badge"><i class="fa-brands fa-linkedin-in"></i></div>
         <div class="card-text">
           <div class="card-label">LinkedIn</div>
-          <div class="card-sub">/in/yourusername</div>
+          <div class="card-sub">/in/vrushank-modi</div>
         </div>
       </a>
 
-      <a class="card naukri" href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noopener">
-        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-        <div class="icon-badge"><i class="fa-solid fa-briefcase"></i></div>
-        <div class="card-text">
-          <div class="card-label">Naukri</div>
-          <div class="card-sub">view profile</div>
-        </div>
-      </a>
-
-      <a class="card github" href="https://github.com/yourusername" target="_blank" rel="noopener">
+      <a class="card github" href="https://github.com/vrushankm19" target="_blank" rel="noopener">
         <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         <div class="icon-badge"><i class="fa-brands fa-github"></i></div>
         <div class="card-text">
           <div class="card-label">GitHub</div>
-          <div class="card-sub">@yourusername</div>
+          <div class="card-sub">@vrushankm19</div>
         </div>
       </a>
 
-      <a class="card website" href="https://yourwebsite.com" target="_blank" rel="noopener">
+      <a class="card website" href="https://vrushankm19.github.io/" target="_blank" rel="noopener">
         <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         <div class="icon-badge"><i class="fa-solid fa-globe"></i></div>
         <div class="card-text">
           <div class="card-label">Website</div>
-          <div class="card-sub">yourwebsite.com</div>
+          <div class="card-sub">vrushankm19.github.io</div>
         </div>
       </a>
     </div>
@@ -425,8 +460,40 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
   $(function(){
-    $('.card').on('click', function(){
-      var label = $(this).find('.card-label').text();
+
+    // staggered entrance across the whole page, one card after another
+    $('.card').each(function(i){
+      $(this).css('animation-delay', (i * 0.06) + 's');
+    });
+
+    // single tap-ripple for a tactile, interactive feel (great on touch/mobile)
+    function spawnRipple(card, x, y){
+      var size = Math.max(card.outerWidth(), card.outerHeight()) * 1.8;
+      var offset = card.offset();
+      var relX = x - offset.left - size / 2;
+      var relY = y - offset.top - size / 2;
+      var $r = $('<span class="ripple"></span>').css({
+        width: size, height: size, left: relX, top: relY
+      });
+      card.append($r);
+      setTimeout(function(){ $r.remove(); }, 650);
+    }
+
+    $('.card').on('click', function(e){
+      var $card = $(this);
+      var pointX = e.pageX, pointY = e.pageY;
+      if (!pointX && e.originalEvent && e.originalEvent.touches && e.originalEvent.touches.length){
+        pointX = e.originalEvent.touches[0].pageX;
+        pointY = e.originalEvent.touches[0].pageY;
+      }
+      if (!pointX){
+        var off = $card.offset();
+        pointX = off.left + $card.outerWidth() / 2;
+        pointY = off.top + $card.outerHeight() / 2;
+      }
+      spawnRipple($card, pointX, pointY);
+
+      var label = $card.find('.card-label').text();
       $('#toastText').text('opening ' + label + '...');
       $('#toast').addClass('show');
       setTimeout(function(){ $('#toast').removeClass('show'); }, 1400);
