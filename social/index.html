@@ -41,7 +41,7 @@
 
   .wrap{
     width:100%;
-    max-width:620px;
+    max-width:640px;
   }
 
   /* Terminal header card */
@@ -51,7 +51,7 @@
     border-radius:10px;
     overflow:hidden;
     box-shadow:0 20px 60px rgba(0,0,0,0.45);
-    margin-bottom:28px;
+    margin-bottom:30px;
   }
 
   .terminal-bar{
@@ -113,7 +113,8 @@
   }
   @keyframes blink{50%{opacity:0;}}
 
-  /* Grid section label */
+  /* Section label */
+  .section{margin-bottom:28px;}
   .section-label{
     font-family:'JetBrains Mono',monospace;
     font-size:12.5px;
@@ -125,6 +126,7 @@
     align-items:center;
     gap:10px;
   }
+  .section-label .sym{color:var(--green);}
   .section-label::after{
     content:"";
     flex:1;
@@ -216,14 +218,19 @@
   .card:hover .arrow{opacity:1;transform:translate(0,0);color:var(--accent);}
 
   /* Per-platform accents using real brand colors */
-  .card.github   { --accent:#f0f6fc; --accent-shadow:rgba(240,246,252,0.15); --glow:radial-gradient(circle at 85% -10%, rgba(240,246,252,0.10), transparent 60%); }
-  .card.linkedin { --accent:#0a66c2; --accent-shadow:rgba(10,102,194,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(10,102,194,0.18), transparent 60%); }
-  .card.twitter  { --accent:#e7e9ea; --accent-shadow:rgba(231,233,234,0.15); --glow:radial-gradient(circle at 85% -10%, rgba(231,233,234,0.10), transparent 60%); }
   .card.instagram{ --accent:#e1306c; --accent-shadow:rgba(225,48,108,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(225,48,108,0.18), transparent 60%); }
   .card.facebook { --accent:#1877f2; --accent-shadow:rgba(24,119,242,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(24,119,242,0.18), transparent 60%); }
+  .card.twitter  { --accent:#e7e9ea; --accent-shadow:rgba(231,233,234,0.15); --glow:radial-gradient(circle at 85% -10%, rgba(231,233,234,0.10), transparent 60%); }
+  .card.youtube  { --accent:#ff0000; --accent-shadow:rgba(255,0,0,0.3); --glow:radial-gradient(circle at 85% -10%, rgba(255,0,0,0.16), transparent 60%); }
+
   .card.whatsapp { --accent:#25d366; --accent-shadow:rgba(37,211,102,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(37,211,102,0.18), transparent 60%); }
   .card.phone    { --accent:var(--amber); --accent-shadow:rgba(227,179,65,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(227,179,65,0.18), transparent 60%); }
   .card.email    { --accent:#7aa2f7; --accent-shadow:rgba(122,162,247,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(122,162,247,0.18), transparent 60%); }
+
+  .card.linkedin { --accent:#0a66c2; --accent-shadow:rgba(10,102,194,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(10,102,194,0.18), transparent 60%); }
+  .card.naukri   { --accent:#ff7e00; --accent-shadow:rgba(255,126,0,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(255,126,0,0.18), transparent 60%); }
+  .card.github   { --accent:#f0f6fc; --accent-shadow:rgba(240,246,252,0.15); --glow:radial-gradient(circle at 85% -10%, rgba(240,246,252,0.10), transparent 60%); }
+  .card.website  { --accent:#2dd4bf; --accent-shadow:rgba(45,212,191,0.35); --glow:radial-gradient(circle at 85% -10%, rgba(45,212,191,0.18), transparent 60%); }
 
   .toast{
     position:fixed;
@@ -246,7 +253,7 @@
 
   footer{
     text-align:center;
-    margin-top:26px;
+    margin-top:6px;
     font-family:'JetBrains Mono',monospace;
     font-size:12px;
     color:var(--text-dim);
@@ -259,6 +266,7 @@
     .card-label{font-size:14px;}
     .card-sub{font-size:11px;}
     .whoami-name{font-size:22px;}
+    .section{margin-bottom:22px;}
   }
 
   /* Reduced motion */
@@ -292,80 +300,121 @@
     </div>
   </div>
 
-  <div class="section-label">connect</div>
+  <!-- SOCIAL -->
+  <div class="section">
+    <div class="section-label"><span class="sym">#</span> social</div>
+    <div class="grid">
+      <a class="card instagram" href="https://instagram.com/yourusername" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-instagram"></i></div>
+        <div class="card-text">
+          <div class="card-label">Instagram</div>
+          <div class="card-sub">@yourusername</div>
+        </div>
+      </a>
 
-  <div class="grid" id="linkGrid">
-    <a class="card github" href="https://github.com/yourusername" target="_blank" rel="noopener">
-      <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <div class="icon-badge"><i class="fa-brands fa-github"></i></div>
-      <div class="card-text">
-        <div class="card-label">GitHub</div>
-        <div class="card-sub">@yourusername</div>
-      </div>
-    </a>
+      <a class="card facebook" href="https://facebook.com/yourusername" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="card-text">
+          <div class="card-label">Facebook</div>
+          <div class="card-sub">/yourusername</div>
+        </div>
+      </a>
 
-    <a class="card linkedin" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
-      <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <div class="icon-badge"><i class="fa-brands fa-linkedin-in"></i></div>
-      <div class="card-text">
-        <div class="card-label">LinkedIn</div>
-        <div class="card-sub">/in/yourusername</div>
-      </div>
-    </a>
+      <a class="card twitter" href="https://x.com/yourusername" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-x-twitter"></i></div>
+        <div class="card-text">
+          <div class="card-label">Twitter / X</div>
+          <div class="card-sub">@yourusername</div>
+        </div>
+      </a>
 
-    <a class="card instagram" href="https://instagram.com/yourusername" target="_blank" rel="noopener">
-      <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <div class="icon-badge"><i class="fa-brands fa-instagram"></i></div>
-      <div class="card-text">
-        <div class="card-label">Instagram</div>
-        <div class="card-sub">@yourusername</div>
-      </div>
-    </a>
+      <a class="card youtube" href="https://youtube.com/@yourusername" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-youtube"></i></div>
+        <div class="card-text">
+          <div class="card-label">YouTube</div>
+          <div class="card-sub">@yourusername</div>
+        </div>
+      </a>
+    </div>
+  </div>
 
-    <a class="card twitter" href="https://x.com/yourusername" target="_blank" rel="noopener">
-      <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <div class="icon-badge"><i class="fa-brands fa-x-twitter"></i></div>
-      <div class="card-text">
-        <div class="card-label">Twitter / X</div>
-        <div class="card-sub">@yourusername</div>
-      </div>
-    </a>
+  <!-- CONTACT -->
+  <div class="section">
+    <div class="section-label"><span class="sym">#</span> contact</div>
+    <div class="grid">
+      <a class="card whatsapp" href="https://wa.me/919999999999" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="card-text">
+          <div class="card-label">WhatsApp</div>
+          <div class="card-sub">+91 99999 99999</div>
+        </div>
+      </a>
 
-    <a class="card facebook" href="https://facebook.com/yourusername" target="_blank" rel="noopener">
-      <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <div class="icon-badge"><i class="fa-brands fa-facebook-f"></i></div>
-      <div class="card-text">
-        <div class="card-label">Facebook</div>
-        <div class="card-sub">/yourusername</div>
-      </div>
-    </a>
+      <a class="card phone" href="tel:+919999999999">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-solid fa-phone"></i></div>
+        <div class="card-text">
+          <div class="card-label">Call</div>
+          <div class="card-sub">+91 99999 99999</div>
+        </div>
+      </a>
 
-    <a class="card whatsapp" href="https://wa.me/919999999999" target="_blank" rel="noopener">
-      <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <div class="icon-badge"><i class="fa-brands fa-whatsapp"></i></div>
-      <div class="card-text">
-        <div class="card-label">WhatsApp</div>
-        <div class="card-sub">+91 99999 99999</div>
-      </div>
-    </a>
+      <a class="card email" href="mailto:you@example.com">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-solid fa-envelope"></i></div>
+        <div class="card-text">
+          <div class="card-label">Email</div>
+          <div class="card-sub">you@example.com</div>
+        </div>
+      </a>
+    </div>
+  </div>
 
-    <a class="card phone" href="tel:+919999999999">
-      <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <div class="icon-badge"><i class="fa-solid fa-phone"></i></div>
-      <div class="card-text">
-        <div class="card-label">Call</div>
-        <div class="card-sub">+91 99999 99999</div>
-      </div>
-    </a>
+  <!-- PROFESSIONAL / JOB -->
+  <div class="section">
+    <div class="section-label"><span class="sym">#</span> professional</div>
+    <div class="grid">
+      <a class="card linkedin" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="card-text">
+          <div class="card-label">LinkedIn</div>
+          <div class="card-sub">/in/yourusername</div>
+        </div>
+      </a>
 
-    <a class="card email" href="mailto:you@example.com">
-      <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-      <div class="icon-badge"><i class="fa-solid fa-envelope"></i></div>
-      <div class="card-text">
-        <div class="card-label">Email</div>
-        <div class="card-sub">you@example.com</div>
-      </div>
-    </a>
+      <a class="card naukri" href="https://www.naukri.com/mnjuser/profile" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="card-text">
+          <div class="card-label">Naukri</div>
+          <div class="card-sub">view profile</div>
+        </div>
+      </a>
+
+      <a class="card github" href="https://github.com/yourusername" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-brands fa-github"></i></div>
+        <div class="card-text">
+          <div class="card-label">GitHub</div>
+          <div class="card-sub">@yourusername</div>
+        </div>
+      </a>
+
+      <a class="card website" href="https://yourwebsite.com" target="_blank" rel="noopener">
+        <span class="arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        <div class="icon-badge"><i class="fa-solid fa-globe"></i></div>
+        <div class="card-text">
+          <div class="card-label">Website</div>
+          <div class="card-sub">yourwebsite.com</div>
+        </div>
+      </a>
+    </div>
   </div>
 
   <footer>&lt;/&gt; built with html · css · jquery</footer>
